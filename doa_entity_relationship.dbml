@@ -1,0 +1,92 @@
+Table ia_org_hierarchy_master {
+  ID bigint [pk]
+  NAME varchar(255)
+  PARENT_ID int
+  TYPE bigint
+  OWNER bigint
+  REF_ID varchar(255)
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Table doa_activity_master {
+  ID bigint [pk]
+  ACTIVITY_NAME varchar(255)
+  DEPARTMENT_ID bigint
+  ACTIVITY_DESC text
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Table doa_matrix_library {
+  ID bigint [pk]
+  TEMPLATE_NAME varchar(255)
+  DEPARTMENT_ID bigint
+  TEMPLATE_DESC text
+  ACTIVITY_ID bigint
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Table doa_matrix_approval_user {
+  ID bigint [pk]
+  TEMPLATE_ID bigint
+  USER_TYPE varchar(255)
+  USER_ID bigint
+  PROFILE_ID bigint
+  SEQUENCE_ID bigint
+  ACTIVITY_ID bigint
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Table ia_users {
+  ID bigint [pk]
+  IRM_USER_ID bigint
+  PROFILE_ID bigint
+  CUST_ID bigint
+  IS_ADMIN char(1)
+  DESIGNATION varchar(255)
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Table ia_profile_mst {
+  ID bigint [pk]
+  PROFILE_NAME varchar(255)
+  IS_DELETABLE int
+  IS_EDITABLE int
+  TYPE int
+  STATUS int
+  CREATED_AT datetime
+  CREATED_BY bigint
+  UPDATED_BY bigint
+  UPDATED_AT datetime
+}
+
+Ref: doa_activity_master.DEPARTMENT_ID > ia_org_hierarchy_master.ID
+
+Ref: doa_matrix_library.DEPARTMENT_ID > ia_org_hierarchy_master.ID
+Ref: doa_matrix_library.ACTIVITY_ID > doa_activity_master.ID
+
+Ref: doa_matrix_approval_user.TEMPLATE_ID > doa_matrix_library.ID
+Ref: doa_matrix_approval_user.ACTIVITY_ID > doa_activity_master.ID
+Ref: doa_matrix_approval_user.USER_ID > ia_users.ID
+Ref: doa_matrix_approval_user.PROFILE_ID > ia_profile_mst.ID
+
+Ref: ia_users.PROFILE_ID > ia_profile_mst.ID
