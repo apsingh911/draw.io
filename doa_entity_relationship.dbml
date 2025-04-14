@@ -79,6 +79,66 @@ Table ia_profile_mst {
   UPDATED_AT datetime
 }
 
+
+Table delegation_of_authority {
+  ID bigint [pk, increment] // Primary Key, Auto Increment
+  REFERENCE varchar(255) [not null]
+  DEPARTMENT_ID bigint [not null]
+  ACTIVITY_ID bigint [not null]
+  APPROVAL_STATUS int [not null, default: 0, note: "Width: 1"]
+  DOA_STATUS int [not null, default: 0, note: "Width: 1"]
+  STATUS int [not null, default: 1, note: "Width: 1"]
+  CREATED_BY bigint [null]
+  UPDATED_BY bigint [null]
+  CREATED_AT datetime [not null]
+  UPDATED_AT datetime [not null]
+}
+
+Table delegation_of_authority_docs {
+  ID bigint [pk, increment] // Primary Key, Auto Increment
+  DOA_ID bigint [note: "Foreign key to delegation_of_authority (optional)"]
+  DOCSNAME varchar(255) [null]
+  FILE_NAME varchar(255) [null]
+  ORIGINAL_NAME varchar(255) [null]
+  UPLOAD_DATE datetime [not null]
+  UPLOAD_BY bigint [null]
+  STATUS int [not null, default: 1, note: "Width: 1"]
+  CREATED_BY bigint [null]
+  UPDATED_BY bigint [null]
+  CREATED_AT datetime [not null]
+  UPDATED_AT datetime [not null]
+}
+
+Table delegation_of_authority_app_logs {
+  ID bigint [pk, increment]
+  DELEGATION_DETAIL_ID bigint [null]
+  USER_TYPE varchar(255) [not null]
+  USER_ID bigint [not null]
+  ACTIVITY_ID bigint [not null]
+  REMARKS text [null, note: "Max length 4000"]
+  SEQUENCE int [null]
+  IS_COMPLETED int [not null, default: 0, note: "Width: 1"]
+  IS_DELEGATE int [not null, default: 0, note: "Width: 1"] // Originally typed as string, fixed to int for consistency
+  DELEGATION_REMARK text [null, note: "Max length 4000"]
+  DELEGATION_ROLE varchar(255) [null] // Originally typed as number, fixed to varchar for consistency
+  DELEGATED_TO bigint [null]
+  DUE_DATE datetime [null]
+  STATUS int [not null, default: 1, note: "Width: 1"]
+  CREATED_BY bigint [null]
+  UPDATED_BY bigint [null]
+  CREATED_AT datetime [not null]
+  UPDATED_AT datetime [not null]
+}
+
+ref:delegation_of_authority_app_logs.DELEGATION_DETAIL_ID > delegation_of_authority.ID
+ref:delegation_of_authority_app_logs.USER_ID > ia_users.ID
+ref:delegation_of_authority_app_logs.ACTIVITY_ID > doa_activity_master.ID
+
+ref:delegation_of_authority_docs.DOA_ID > delegation_of_authority.ACTIVITY_ID
+
+ref: delegation_of_authority.ACTIVITY_ID > doa_activity_master.ID
+ref: delegation_of_authority.DEPARTMENT_ID > ia_org_hierarchy_master.ID
+
 Ref: doa_activity_master.DEPARTMENT_ID > ia_org_hierarchy_master.ID
 
 Ref: doa_matrix_library.DEPARTMENT_ID > ia_org_hierarchy_master.ID
