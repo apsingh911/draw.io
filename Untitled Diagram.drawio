@@ -1,45 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
-  <diagram name="Page-1" id="wdNcOEKO8HH3KpOKQPFk">
-    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36">
+  <diagram id="Lm0aLwvHx3WjJbXbx7m-" name="Page-1">
+    <mxGraphModel dx="943" dy="495" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="&lt;span style=&quot;font-family: Cambria, serif;&quot; lang=&quot;EN-US&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Audit Log Info&lt;/font&gt;&lt;/span&gt;" link="Audit_log_info.drawio" id="_5ciUuQu0tD03y1jtSTK-78">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" parent="1" vertex="1">
-            <mxGeometry x="340" y="660" width="180" height="110" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Session Log Info&lt;/font&gt;&lt;/p&gt;" id="_5ciUuQu0tD03y1jtSTK-79">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" parent="1" vertex="1">
-            <mxGeometry x="590" y="660" width="220" height="110" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;System Log Info&lt;/font&gt;&lt;/p&gt;" id="_5ciUuQu0tD03y1jtSTK-80">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;textShadow=0;" parent="1" vertex="1">
-            <mxGeometry x="890" y="660" width="220" height="110" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="_5ciUuQu0tD03y1jtSTK-81" value="&lt;b style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 36px; text-wrap-mode: nowrap;&quot;&gt;&amp;nbsp;iRM Product Roadmap&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=light-dark(#f4d2d2, #ededed);gradientDirection=south;" parent="1" vertex="1">
-          <mxGeometry x="500" y="390" width="460" height="135" as="geometry" />
-        </mxCell>
-        <mxCell id="_5ciUuQu0tD03y1jtSTK-82" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.476;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="_5ciUuQu0tD03y1jtSTK-81" target="_5ciUuQu0tD03y1jtSTK-79" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="530" as="sourcePoint" />
-            <mxPoint x="820" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_5ciUuQu0tD03y1jtSTK-83" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.752;exitY=0.935;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="_5ciUuQu0tD03y1jtSTK-81" target="_5ciUuQu0tD03y1jtSTK-80" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="899.9999999999997" y="471.3549999999999" as="sourcePoint" />
-            <mxPoint x="1186.42" y="570" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_5ciUuQu0tD03y1jtSTK-84" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="_5ciUuQu0tD03y1jtSTK-81" target="_5ciUuQu0tD03y1jtSTK-78" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="470" y="540" as="sourcePoint" />
-            <mxPoint x="520" y="490" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
