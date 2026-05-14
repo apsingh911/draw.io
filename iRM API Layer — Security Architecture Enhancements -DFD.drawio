@@ -304,7 +304,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mJmQFXMARv7uR1RtMib1" name="Level 2 DFD iRM-Service-Security ">
-    <mxGraphModel dx="1360" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+    <mxGraphModel dx="659" dy="319" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -572,6 +572,18 @@
             <Array as="points" />
             <mxPoint x="1030" y="1060" as="sourcePoint" />
             <mxPoint x="880" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2xQC_lYJOQBecFSYd6j-34" edge="1" parent="1" source="p31" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.988;entryY=0.923;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="ext" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="310" y="1020" as="sourcePoint" />
+            <mxPoint x="160" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2xQC_lYJOQBecFSYd6j-35" connectable="0" parent="d2xQC_lYJOQBecFSYd6j-34" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3.6 API Response&lt;br&gt;(Access Granted / &lt;br&gt;Denied)" vertex="1">
+          <mxGeometry relative="1" x="0.1268" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
