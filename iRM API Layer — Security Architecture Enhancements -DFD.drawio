@@ -1,9 +1,97 @@
 <mxfile host="app.diagrams.net">
   <diagram name="iRM-Service-security-DFD" id="n-nfVzQPn5Xcfq_lw06w">
-    <mxGraphModel dx="1030" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1288" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="external" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;External System" vertex="1">
+          <mxGeometry height="160" width="220" x="320" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="process0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;" value="0&#xa;&#xa;M2M Authentication &amp;&#xa;Authorization System&#xa;&#xa;Authenticates external systems,&#xa;issues JWT tokens, validates&#xa;tokens and authorizes API access&#xa;based on scopes and permissions." vertex="1">
+          <mxGeometry height="400" width="420" x="880" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" value="&lt;br&gt;Service User Repository&lt;div&gt;&lt;br&gt;(Client ID, Secret Hash,&lt;br&gt;Status, Expiry, IP Allowlist,&lt;br&gt;Scopes, etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="220" x="1400" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" value="&lt;br&gt;Token Blacklist&lt;div&gt;&lt;br&gt;(Revoked Token IDs,&lt;br&gt;Revoked At, Reason, etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="220" x="1400" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" value="&lt;br&gt;Permission Store&lt;div&gt;&lt;br&gt;&lt;div&gt;(Roles, Permissions,&lt;br&gt;Scopes, Resource-Action&lt;br&gt;Mappings)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="220" x="1400" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="&lt;br&gt;Audit Log Store&lt;div&gt;&lt;br&gt;(All AuthN/AuthZ,&lt;br&gt;Token, Access Events,&lt;br&gt;Admin Actions)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="220" x="1400" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="external" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.002;entryY=0.398;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" target="process0" value="1. Client ID + Client Secret&#xa;(Token Request)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="851" y="340" />
+              <mxPoint x="851" y="359" />
+            </Array>
+            <mxPoint x="560" y="350" as="sourcePoint" />
+            <mxPoint x="790" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#0000FF;strokeWidth=2;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" value="2. JWT Access Token&#xa;(Token Response)">
+          <mxGeometry relative="1" x="-0.1724" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="880" y="450" />
+              <mxPoint x="680" y="450" />
+              <mxPoint x="680" y="400" />
+            </Array>
+            <mxPoint x="800" y="450" as="sourcePoint" />
+            <mxPoint x="560" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="1" source="external" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" target="process0" value="3. API Request with&#xa;Bearer Token">
+          <mxGeometry relative="1" x="-0.1905" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="560" y="500" />
+              <mxPoint x="800" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#FF0000;strokeWidth=2;exitX=-0.005;exitY=0.896;exitDx=0;exitDy=0;exitPerimeter=0;" target="external" value="4. API Response&#xa;(Access Granted / Denied)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="878" y="570" />
+              <mxPoint x="450" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pd1" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="d1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="340" />
+              <mxPoint x="1350" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pd2" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="d2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="365" />
+              <mxPoint x="1330" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pd3" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="d3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="410" />
+              <mxPoint x="1350" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pd4" edge="1" parent="1" source="process0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="d4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
