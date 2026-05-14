@@ -225,6 +225,11 @@
             <mxPoint x="1180" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="XweOg66XtA9k14qcwxr9-21" connectable="0" parent="XweOg66XtA9k14qcwxr9-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3.2 Permission Result&amp;nbsp;&lt;br&gt;(Allowed / Denied)" vertex="1">
+          <mxGeometry relative="1" x="0.0404" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
