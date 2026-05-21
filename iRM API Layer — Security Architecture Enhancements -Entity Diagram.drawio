@@ -1,9 +1,30 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="TSjLT1vXQ4Mq8S_FQAMk">
-    <mxGraphModel dx="1472" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1472" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="API_SERVICE&#xa;&#xa;PK service_user_id : INT&#xa;service_user_name : VARCHAR&#xa;owning_team : TEXT&#xa;cust_id : INT&#xa;description : TEXT&#xa;expiry_date : DATETIME&#xa;client_id : INT&#xa;accountable_person_name : VARCHAR&#xa;accountable_person_email : VARCHAR&#xa;accountable_person_phone : VARCHAR" vertex="1">
+          <mxGeometry height="260" width="350" x="140" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="SERVICE_USER_SECRET&#xa;&#xa;PK secret_id : INT&#xa;FK service_user_id : INT&#xa;hash : VARCHAR&#xa;iv : VARCHAR&#xa;is_expired : FLAG&#xa;generation_time : DATETIME" vertex="1">
+          <mxGeometry height="190" width="330" x="670" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="IP_ALLOWING_LIST&#xa;&#xa;PK ip_id : INT&#xa;FK service_user_id : INT&#xa;ip_cidr : VARCHAR&#xa;ip_desc : VARCHAR&#xa;is_ip_active : FLAG" vertex="1">
+          <mxGeometry height="170" width="330" x="1030" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="TOKEN_CONFIGURATION&#xa;&#xa;PK token_config_id : INT&#xa;FK service_user_id : INT&#xa;access_token_lifetime : INT&#xa;jwt_algo : VARCHAR&#xa;auto_disable_inactive : FLAG&#xa;max_active_token : INT" vertex="1">
+          <mxGeometry height="190" width="350" x="370" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="3" value="1 : N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="4" value="1 : N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" target="5" value="1 : 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
