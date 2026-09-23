@@ -17,7 +17,7 @@
           <mxGeometry height="90" width="165" x="180" y="500" as="geometry" />
         </mxCell>
         <mxCell id="v6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dff3d8;strokeColor=#5aaf5a;fontStyle=1;fontSize=14;fontColor=#163d16;" value="Administrator /&amp;nbsp;&lt;div&gt;User&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="150" x="1275" y="250" as="geometry" />
+          <mxGeometry height="120" width="150" x="1275" y="210" as="geometry" />
         </mxCell>
         <mxCell id="v7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="Incident Management System" vertex="1">
           <mxGeometry height="120" width="260" x="670" y="330" as="geometry" />
@@ -97,6 +97,12 @@
         </mxCell>
         <mxCell id="qhq5BRq-5_R2AB9iyvbI-1" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" value="" vertex="1">
           <mxGeometry height="30" width="28.2" x="170" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="qhq5BRq-5_R2AB9iyvbI-2" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" value="" vertex="1">
+          <mxGeometry height="30" width="28.2" x="190" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="qhq5BRq-5_R2AB9iyvbI-3" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" value="" vertex="1">
+          <mxGeometry height="30" width="28.2" x="1280" y="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
