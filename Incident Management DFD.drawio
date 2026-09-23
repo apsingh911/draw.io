@@ -231,7 +231,7 @@
           <mxGeometry height="115" width="150" x="20" y="505" as="geometry" />
         </mxCell>
         <mxCell id="v6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dff3d8;strokeColor=#5aaf5a;fontStyle=1;fontSize=14;fontColor=#163d16;" value="Administrator /&lt;div&gt;User&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="125" x="1465" y="850" as="geometry" />
+          <mxGeometry height="140" width="125" x="1465" y="790" as="geometry" />
         </mxCell>
         <mxCell id="v7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4a90e2;dashed=0;fontStyle=1;fontSize=15;fontColor=#123b70;align=left;verticalAlign=top;spacingTop=8;" value="&amp;nbsp; 1. Incident Capture &amp;amp; Validation" vertex="1">
           <mxGeometry height="175" width="1142.5" x="240" y="265" as="geometry" />
@@ -391,6 +391,9 @@
         </mxCell>
         <mxCell id="RpzikKe9qQh6HApgULVO-2" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.user" value="" vertex="1">
           <mxGeometry height="30" width="28.2" x="30" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="bvO_6Bovpm50MlybzFVE-1" parent="1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.user_group" value="" vertex="1">
+          <mxGeometry height="37" width="50" x="1490" y="800" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
