@@ -305,11 +305,11 @@
         <mxCell id="v32" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe1c4;strokeColor=#4a90e2;fontStyle=1;fontSize=12;fontColor=#173b63;" value="IM_INCIDENT_ACTION_PLAN" vertex="1">
           <mxGeometry height="60" width="195" x="1187.5" y="790" as="geometry" />
         </mxCell>
-        <mxCell id="v33" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e5d9ff;strokeColor=#4a90e2;fontStyle=1;fontSize=12;fontColor=#173b63;" value="IM_APPROVAL_SEQUENCE&amp;lt;br&amp;gt;(Template, User, Sequence,&amp;lt;br&amp;gt;Approval Status)" vertex="1">
-          <mxGeometry height="60" width="220" x="465" y="1080" as="geometry" />
+        <mxCell id="v33" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e5d9ff;strokeColor=#4a90e2;fontStyle=1;fontSize=12;fontColor=#173b63;" value="IM_APPROVAL_SEQUENCE&lt;div&gt;(Template, User, Sequence, Approval Status)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="465" y="1060" as="geometry" />
         </mxCell>
-        <mxCell id="v34" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d9eaff;strokeColor=#4a90e2;fontStyle=1;fontSize=12;fontColor=#173b63;" value="IM_MAIL_CONFIG_MASTER&amp;lt;br&amp;gt;(Template, Subject, Layout,&amp;lt;br&amp;gt;Status)" vertex="1">
-          <mxGeometry height="60" width="220" x="915" y="1080" as="geometry" />
+        <mxCell id="v34" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d9eaff;strokeColor=#4a90e2;fontStyle=1;fontSize=12;fontColor=#173b63;" value="IM_MAIL_CONFIG_MASTER&lt;div&gt;(Template, Subject, Layout, Status)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="915" y="1060" as="geometry" />
         </mxCell>
         <mxCell id="e35" edge="1" parent="1" source="v4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" target="v11" value="1.1 Submit Request">
           <mxGeometry relative="1" as="geometry" />
