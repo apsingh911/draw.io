@@ -266,7 +266,7 @@
         <mxCell id="v19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="3.2&amp;lt;br&amp;gt;Assign Action Owner" vertex="1">
           <mxGeometry height="60" width="185" x="485" y="790" as="geometry" />
         </mxCell>
-        <mxCell id="v20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="3.3&amp;lt;br&amp;gt;Set Due Date &amp;amp; Priority" vertex="1">
+        <mxCell id="v20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="3.3 Set Due Date&amp;nbsp;&lt;div&gt;&amp;amp; Priority&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="195" x="702.5" y="790" as="geometry" />
         </mxCell>
         <mxCell id="v21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="3.4 Track Implementation Status" vertex="1">
