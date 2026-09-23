@@ -16,7 +16,7 @@
         <mxCell id="v5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dff3d8;strokeColor=#5aaf5a;fontStyle=1;fontSize=14;fontColor=#163d16;" value="Risk /&amp;nbsp;&lt;div&gt;ComplianceUser&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="165" x="180" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="v6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dff3d8;strokeColor=#5aaf5a;fontStyle=1;fontSize=14;fontColor=#163d16;" value="Administrator" vertex="1">
+        <mxCell id="v6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dff3d8;strokeColor=#5aaf5a;fontStyle=1;fontSize=14;fontColor=#163d16;" value="Administrator /&amp;nbsp;&lt;div&gt;User&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="150" x="1275" y="250" as="geometry" />
         </mxCell>
         <mxCell id="v7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="Incident Management System" vertex="1">
