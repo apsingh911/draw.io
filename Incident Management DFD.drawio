@@ -234,7 +234,7 @@
           <mxGeometry height="80" width="125" x="1465" y="850" as="geometry" />
         </mxCell>
         <mxCell id="v7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4a90e2;dashed=0;fontStyle=1;fontSize=15;fontColor=#123b70;align=left;verticalAlign=top;spacingTop=8;" value="&amp;nbsp; 1. Incident Capture &amp;amp; Validation" vertex="1">
-          <mxGeometry height="175" width="1120" x="240" y="265" as="geometry" />
+          <mxGeometry height="175" width="1142.5" x="240" y="265" as="geometry" />
         </mxCell>
         <mxCell id="v8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4a90e2;fontStyle=1;fontSize=15;fontColor=#123b70;align=left;verticalAlign=top;spacingTop=8;" value="&amp;nbsp; 2. Hierarchy, Details &amp;amp; Risk Assessment" vertex="1">
           <mxGeometry height="225" width="1155" x="240" y="460" as="geometry" />
@@ -243,7 +243,7 @@
           <mxGeometry height="190" width="1155" x="240" y="710" as="geometry" />
         </mxCell>
         <mxCell id="v10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4a90e2;fontStyle=1;fontSize=15;fontColor=#123b70;align=left;verticalAlign=top;spacingTop=8;" value="&amp;nbsp; &amp;nbsp;4. Approval &amp;amp; Closure" vertex="1">
-          <mxGeometry height="225" width="1120" x="262.5" y="930" as="geometry" />
+          <mxGeometry height="225" width="1155" x="240" y="930" as="geometry" />
         </mxCell>
         <mxCell id="v11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfe4ff;strokeColor=#4a90e2;fontStyle=1;fontSize=14;fontColor=#123b70;" value="1.1 Capture Incident Request" vertex="1">
           <mxGeometry height="65" width="170" x="365" y="337.5" as="geometry" />
